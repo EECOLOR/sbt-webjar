@@ -12,7 +12,7 @@ Installation
 Add the following to the `project/plugins.sbt` file:
 
 ``` scala
-addSbtPlugin("org.qirx" % "sbt-webjar" % "0.2")
+addSbtPlugin("org.qirx" % "sbt-webjar" % "0.3")
 
 resolvers += Resolvers.url("Rhinofly Internal Repository", url("http://maven-repository.rhinofly.net:8081/artifactory/libs-release-local"))(Resolver.ivyStylePatterns)
 ```
