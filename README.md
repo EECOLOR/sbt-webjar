@@ -9,12 +9,12 @@ This plugin:
 Installation
 ------------
 
-``` scala
-val appDependencies = Seq(
-  "org.qirx" %% "sbt-webjar" % "0.2"
-)
+Add the following to the `project/plugins.sbt` file:
 
-resolvers += "Rhinofly Internal Repository" at "http://maven-repository.rhinofly.net:8081/artifactory/libs-release-local"
+``` scala
+addSbtPlugin("org.qirx" % "sbt-webjar" % "0.2")
+
+resolvers += Resolvers.url("Rhinofly Internal Repository", url("http://maven-repository.rhinofly.net:8081/artifactory/libs-release-local"))(Resolver.ivyStylePatterns)
 ```
 
 Usage
